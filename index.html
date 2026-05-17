@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Extreme Electronics - Engineering solutions in AI/ML, Electronics, and Mechatronics. From prototype to production.">
+  <title>Extreme Electronics | AI/ML • Electronics • Mechatronics</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur border-b border-gray-800/50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="text-xl font-bold text-white">Extreme Electronics</a>
+      <button id="menu-toggle" class="md:hidden text-white" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul id="nav-links" class="hidden md:flex space-x-8">
+        <li><a href="#hero" class="nav-link text-gray-300 hover:text-white transition-colors">Home</a></li>
+        <li><a href="#solutions" class="nav-link text-gray-300 hover:text-white transition-colors">Solutions</a></li>
+        <li><a href="#services" class="nav-link text-gray-300 hover:text-white transition-colors">Services</a></li>
+        <li><a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors">About</a></li>
+        <li><a href="#contact" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Mobile menu -->
+    <ul id="mobile-menu" class="hidden flex-col md:hidden bg-gray-900/95 backdrop-blur px-4 pb-4">
+      <li><a href="#hero" class="nav-link block py-2 text-gray-300 hover:text-white transition-colors">Home</a></li>
+      <li><a href="#solutions" class="nav-link block py-2 text-gray-300 hover:text-white transition-colors">Solutions</a></li>
+      <li><a href="#services" class="nav-link block py-2 text-gray-300 hover:text-white transition-colors">Services</a></li>
+      <li><a href="#about" class="nav-link block py-2 text-gray-300 hover:text-white transition-colors">About</a></li>
+      <li><a href="#contact" class="nav-link block py-2 text-gray-300 hover:text-white transition-colors">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
+      </div>
+      <div class="text-center px-4 relative z-10">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">Extreme Electronics</h1>
+        <p class="text-xl md:text-2xl text-gray-300 mt-4 max-w-2xl mx-auto">Engineering solutions in AI/ML, Electronics &amp; Mechatronics — from prototype to production.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#solutions" class="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors font-medium">
+            View Our Work
+          </a>
+          <a href="#services" class="inline-block px-8 py-3 border border-gray-500 hover:border-white text-gray-300 hover:text-white rounded-lg transition-colors font-medium">
+            Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivered Solutions Section -->
+    <section id="solutions" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">Delivered Solutions</h2>
+        <p class="text-gray-400 text-center max-w-2xl mx-auto mb-16">End-to-end products we've designed, built, and delivered — hardware and software, from concept to deployment.</p>
+
+        <!-- Featured Products (delivered to clients) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Apple Sorting Conveyor -->
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/ai-sorting-conveyor.png" alt="AI Based Apple Sorting Conveyor" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs font-medium text-green-400 bg-green-400/10 px-2 py-0.5 rounded-full">Delivered</span>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2">AI Based Apple Sorting Conveyor</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">An AI, Mechanical and Electronic solution. A conveyor belt with camera and sensor classifies apples as good or bad using ML. Bad apples are removed using the mechanical subsystem. Both hardware and software built in-house.</p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag tag-ai-ml">AI/ML</span>
+                <span class="tag tag-mechatronics">Mechatronics</span>
+                <span class="tag tag-electronics">Electronics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Multi-functional Weighing Scale -->
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/weighing-scale.png" alt="Multi-functional Weighing Scale" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs font-medium text-green-400 bg-green-400/10 px-2 py-0.5 rounded-full">Delivered</span>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2">Multi-functional Weighing Scale</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Capable of measuring weight, piece counting, and automatic liquid filling. Output can be integrated with other systems for further automated action.</p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag tag-electronics">Electronics</span>
+                <span class="tag tag-mechatronics">Mechatronics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- IoT Datalogging Device -->
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/iot-dashboard.png" alt="IoT Enabled Datalogging Device" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs font-medium text-green-400 bg-green-400/10 px-2 py-0.5 rounded-full">Delivered</span>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2">IoT Enabled Datalogging Device (Wireless)</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Captures and logs data over internet — temperature, humidity, pressure, current, voltage, or any external parameters. Displayed on a customizable digital dashboard accessible from anywhere in the world.</p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag tag-electronics">Electronics</span>
+                <span class="tag tag-ai-ml">IoT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smart Water Tank -->
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/smart-water-control.png" alt="Smart Water Tank Monitoring and Control" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs font-medium text-green-400 bg-green-400/10 px-2 py-0.5 rounded-full">Delivered</span>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2">Smart Water Tank Monitoring &amp; Control</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Detects water source and tank level, automatically fills the tank. Range of devices for home, society, and bungalow with smart monitoring and control through a digital dashboard.</p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag tag-electronics">Electronics</span>
+                <span class="tag tag-mechatronics">Mechatronics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Solutions (concepts we can deliver) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/dog-behaviour.png" alt="Dog Behaviour Monitoring System" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">Dog Behaviour Monitor</h4>
+              <p class="text-gray-400 text-sm">AI-powered system for monitoring and analyzing canine behaviour patterns.</p>
+            </div>
+          </div>
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/smart-bin.png" alt="Smart Bin" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">Smart Bin</h4>
+              <p class="text-gray-400 text-sm">Intelligent waste management with automated sorting and fill-level monitoring.</p>
+            </div>
+          </div>
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/vr-kit-students.png" alt="VR Kit for Students" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">VR Kit for Students</h4>
+              <p class="text-gray-400 text-sm">Immersive virtual reality educational kit for hands-on learning.</p>
+            </div>
+          </div>
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/crop-mapping.png" alt="Crop Mapping System" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">Crop Mapping</h4>
+              <p class="text-gray-400 text-sm">Aerial crop mapping and analysis for precision agriculture.</p>
+            </div>
+          </div>
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/piece-counting.png" alt="Piece Counting System" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">Piece Counting</h4>
+              <p class="text-gray-400 text-sm">Automated piece counting for industrial inventory management.</p>
+            </div>
+          </div>
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/robotic-jewellery.png" alt="Robotic Jewellery Design" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">Robotic Jewellery Design</h4>
+              <p class="text-gray-400 text-sm">Precision robotic system for intricate jewellery manufacturing.</p>
+            </div>
+          </div>
+          <div class="solution-card bg-gray-800 rounded-xl overflow-hidden">
+            <img src="images/warehouse-drone.png" alt="Warehouse Drone" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Concept Ready</span>
+              <h4 class="text-lg font-bold text-white mt-2 mb-1">Warehouse Drone</h4>
+              <p class="text-gray-400 text-sm">Autonomous drone for warehouse inventory scanning and management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">Our Services</h2>
+        <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">Comprehensive engineering capabilities from concept to production.</p>
+
+        <!-- Accordion -->
+        <div class="max-w-4xl mx-auto space-y-4" id="services-accordion">
+
+          <!-- Advanced Engineering & Consulting -->
+          <div class="accordion-item bg-gray-900 rounded-lg overflow-hidden">
+            <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span class="flex-shrink-0 w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                </span>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Advanced Engineering &amp; Consulting</h3>
+                  <p class="text-sm text-gray-400 mt-0.5">Prototype to bulk production, R&D, and 3D modelling</p>
+                </div>
+              </div>
+              <svg class="accordion-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content hidden">
+              <div class="p-5 pt-0 flex flex-col md:flex-row gap-6">
+                <img src="images/gantry-system.png" alt="3D Design and Engineering" class="w-full md:w-48 h-36 object-cover rounded-lg">
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Prototype Development</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Research &amp; Development</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Complex 3D Modelling</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Bulk Production</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Design Engineering -->
+          <div class="accordion-item bg-gray-900 rounded-lg overflow-hidden">
+            <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span class="flex-shrink-0 w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </span>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Product Design Engineering</h3>
+                  <p class="text-sm text-gray-400 mt-0.5">Robotics, automation, embedded systems, and control design</p>
+                </div>
+              </div>
+              <svg class="accordion-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content hidden">
+              <div class="p-5 pt-0 flex flex-col md:flex-row gap-6">
+                <img src="images/robotic-welding.png" alt="Robotic Integration" class="w-full md:w-48 h-36 object-cover rounded-lg">
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>Robotic Integration for Manufacturing</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>Industrial Automation</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>Advanced Embedded Systems</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>Home Automation</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>Control System Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Software Solutions -->
+          <div class="accordion-item bg-gray-900 rounded-lg overflow-hidden">
+            <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span class="flex-shrink-0 w-10 h-10 bg-cyan-600/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                </span>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Software Solutions</h3>
+                  <p class="text-sm text-gray-400 mt-0.5">AI/ML development, dashboards, and mobile apps</p>
+                </div>
+              </div>
+              <svg class="accordion-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content hidden">
+              <div class="p-5 pt-0 flex flex-col md:flex-row gap-6">
+                <img src="images/app-development.png" alt="Software Development" class="w-full md:w-48 h-36 object-cover rounded-lg">
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span>AI/ML Custom Software Development</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span>Smart Dashboard (Customizable)</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span>App Development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming Support -->
+          <div class="accordion-item bg-gray-900 rounded-lg overflow-hidden">
+            <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span class="flex-shrink-0 w-10 h-10 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+                </span>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Programming Support</h3>
+                  <p class="text-sm text-gray-400 mt-0.5">PLC, SCADA, HMI, and microcontroller programming</p>
+                </div>
+              </div>
+              <svg class="accordion-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content hidden">
+              <div class="p-5 pt-0 flex flex-col md:flex-row gap-6">
+                <img src="images/plc-programming.png" alt="PLC Programming" class="w-full md:w-48 h-36 object-cover rounded-lg">
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>PLC Programming (Delta &amp; Siemens)</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>SCADA / HMI Programming</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full"></span>Microcontroller Programming (STM, PIC, ARM Cortex, Raspberry Pi)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electronics -->
+          <div class="accordion-item bg-gray-900 rounded-lg overflow-hidden">
+            <button class="accordion-trigger w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span class="flex-shrink-0 w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </span>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Electronics</h3>
+                  <p class="text-sm text-gray-400 mt-0.5">PCB design, LED displays, control panels, and diagnostics</p>
+                </div>
+              </div>
+              <svg class="accordion-icon w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content hidden">
+              <div class="p-5 pt-0 flex flex-col md:flex-row gap-6">
+                <img src="images/led-sign-board.png" alt="LED Sign Board" class="w-full md:w-48 h-36 object-cover rounded-lg">
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span>PCB Design &amp; Manufacturing</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span>LED Based Smart Sign Board</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span>Control Panel Design</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span>Diagnostic &amp; Repair of Electronic Circuits</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">About Us</h2>
+        <p class="text-gray-300 text-center max-w-2xl mx-auto mb-12">
+          Extreme Electronics is a team of engineers who design and build end-to-end solutions spanning AI/ML, Electronics, and Mechatronics. From concept through deployment, we bring together software intelligence, custom hardware, and mechanical systems to solve real-world problems.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700/50">
+            <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-400">AI/ML</h3>
+            <p class="text-gray-300 mt-2 text-sm">Computer vision, classification models, intelligent control systems, and custom AI software that gives hardware the ability to perceive and adapt in real time.</p>
+          </div>
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700/50">
+            <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-green-400">Electronics</h3>
+            <p class="text-gray-300 mt-2 text-sm">Custom PCB design, sensor integration, power management, IoT connectivity, PLC/SCADA programming, and control panel engineering.</p>
+          </div>
+          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700/50">
+            <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-purple-400">Mechatronics</h3>
+            <p class="text-gray-300 mt-2 text-sm">Mechanical design with embedded control — robotic arms, autonomous vehicles, conveyor systems, and precision machines that operate reliably in the field.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+        <p class="text-gray-300 max-w-xl mx-auto mb-8">Interested in working together? Reach out via email or connect with us on social media.</p>
+        <div class="space-y-6">
+          <div>
+            <a href="mailto:contact@extremeelectronics.com" class="text-blue-400 hover:text-blue-300 text-lg transition-colors">
+              contact@extremeelectronics.com
+            </a>
+          </div>
+          <div class="flex justify-center gap-6">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-gray-400 hover:text-blue-400 transition-colors">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-400 hover:text-blue-400 transition-colors">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/extremeelectronicsmumbai" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-400 hover:text-blue-400 transition-colors">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 border-t border-gray-800 py-8">
+    <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap justify-center gap-6 mb-4">
+        <a href="#hero" class="text-gray-400 hover:text-white transition-colors">Home</a>
+        <a href="#solutions" class="text-gray-400 hover:text-white transition-colors">Solutions</a>
+        <a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a>
+        <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+        <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+      </nav>
+      <p class="text-center text-gray-500">&copy; 2025 Extreme Electronics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
